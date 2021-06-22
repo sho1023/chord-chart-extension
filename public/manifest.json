@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "ChordWiki Editor",
+  "description": "ChordWiki上でコード譜の編集・保存ができます",
+  "version": "0.0.1",
+  "icons": { "128": "img/icon128.png" },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ja.chordwiki.org/wiki*"],
+      "js": ["js/contentScript.js"],
+      "css": ["css/style.css"]
+    }
+  ],
+  "permissions": ["contextMenus", "tabs", "storage"]
+}

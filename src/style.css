@@ -1,0 +1,41 @@
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', メイリオ, meiryo, sans-serif;
+}
+
+.word > span {
+  cursor: pointer;
+}
+
+.word > span:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+.wordtop > span {
+  cursor: pointer;
+}
+
+.wordtop > span:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+.chord > sup {
+  display: none;
+  margin-right: -1em;
+  margin-top: -1em;
+  color: crimson;
+}
+
+.chord:hover > sup {
+  display: inline-flex;
+}
+
+div.main {
+  margin-right: 60px !important;
+  margin-left: 60px !important;
+}
+
+#side {
+  display: none;
+}
