@@ -1,11 +1,12 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "ChordWiki Editor",
   "description": "ChordWiki上でコード譜の編集・保存ができます",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icons": { "96": "img/icon96.png" },
   "background": {
-    "scripts": ["js/background.js"]
+    "service_worker": "js/background.js",
+    "type": "module"
   },
   "content_scripts": [
     {
